@@ -1,0 +1,157 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #8cdfee;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Barra de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a73e8; /* Cambié el color de los enlaces a un azul más contrastante */
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #0d47a1; /* Cambié el color al pasar el cursor por encima */
+}
+
+/* Secciones */
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularios */
+form input, form select, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Botones */
+button {
+    background-color: #86cbe0;
+    color: #181717;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #97eaf5;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #f7f4f4;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #9be3f5;
+    color: #ffffff;
+}
+
+table td {
+    text-align: center; /* Centrado del texto en las celdas */
+}
+
+/* Tarjetas de equipos */
+#teamCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.team-card {
+    border: 1px solid #181717;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    background-color: #f8f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #79c6eb;
+    color: #e6e5e5;
+    margin-top: 20px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #teamCardsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 90%;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+    }
+}
